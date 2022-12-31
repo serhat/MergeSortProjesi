@@ -1,0 +1,34 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+
+1.adım diziyi ortadan ikiye bölüyoruz
+
+[16,21,11]      [8,12,22]
+
+2.adım dizileri 2 ye bölüyoruz
+
+[16]   [21,11]       [8]   [12,22]
+
+
+3.adım dizileri 2 ye bölüyoruz
+
+
+[16]          [21]  [11]                               [8]             [12]    [22]
+
+
+4.adım dizileri en yakınlarından başlayarak sıralıyoruz
+
+[16]            [11]   [21]                            [8]             [12]    [22]
+
+     [11] [16] [21]                                      [8] [12] [22]
+
+
+ [8][11][12][16][21][22]  -->8,11,12,16,21,22
+
+n adımda 2'ye bölenerek geldi 
+her adımda kendi arasında n defa hareket etti 
+
+O(nlogn)
